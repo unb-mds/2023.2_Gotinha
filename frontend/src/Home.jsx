@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
 import './Home.css';
 import LogoGO from './assets/goImg.png';
 import LogoGit from './assets/gitImg.png';
@@ -11,9 +12,9 @@ function Home() {
                 <img src={LogoGO} alt="LogoGotinha" className="logo" />
                 <nav className="nav">
                     <ul>
-                        <li><a href="/" className="nav-button">Home</a></li>
-                        <li><a href="/Pesquisa" className="nav-button">Pesquisa</a></li>
-                        <li><a href="/Sobre" className="nav-button">Sobre</a></li>
+                        <li><Link to="/2023.2_Gotinha" className="nav-button">Home</Link></li>
+                        <li><Link to="/2023.2_Gotinha/Pesquisa" className="nav-button">Pesquisa</Link></li>
+                        <li><Link to="/2023.2_Gotinha/Sobre" className="nav-button">Sobre</Link></li>
                     </ul>
                 </nav>
             </div>
@@ -35,7 +36,7 @@ function Home() {
                             <h2>Cidades que mais investem na saúde do Goiás</h2>
                             <p>Gráfico...</p>
                         </div>
-                        <button className="btn-buscar-cidades">Buscar Cidades</button>
+                        <button className="btn-buscar-cidades">Buscar cidades</button>
                     </div>
                 </div>
 
