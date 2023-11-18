@@ -101,7 +101,7 @@ select:focus {
 }
 
 .item-selection .select-ano {
-    width: 150px;
+    width: 170px;
     height: 50px;
 }
 
@@ -124,24 +124,8 @@ select:focus {
     width: 60%;
     height: 350px;
     margin-top: 40px;
-    background: #2E7D9A;
+    background: #5BA7C8;
     border-radius: 50px;
-}
-
-.btn-baixar-pdf {
-    width: 150px;
-    height: 50px;
-    margin: 30px;
-    background: #022B3A;
-    border-radius: 30px;
-    color: #EEF0F2;
-    font-size: 15px;
-    border-style: none;
-    cursor: pointer;
-}
-
-.btn-baixar-pdf:hover {
-    background: #1F7A8C;
 }
 
 .footer {
@@ -150,6 +134,7 @@ select:focus {
     align-items: center;
     background: #1F7A8C;
     height: 81px;
+    margin-top: 5%;
 }
 
 .footer p {
