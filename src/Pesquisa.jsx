@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
+import GraficoBarra from './Graficos/GraficoBarra';
+import GraficoRosquinha from "./Graficos/GraficoRosquinha";
 import './Pesquisa.css';
 import LogoGO from './assets/goImg.png';
 import LogoGit from './assets/gitImg.png';
@@ -10,7 +12,6 @@ function Pesquisa() {
 
     const [cidades, setCidades] = useState(["Cidade 1", "Cidade 2", "Cidade 3"]); // Inicialize o estado com as cidades
     const [ano, setAno] = useState([2023, 2022, 2021]); // Inicialize o estado com o ano
-    const [mes, setMes] = useState(["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]); // Inicialize o estado com o mês
 
     return (
         <div className="pesquisa">
@@ -18,17 +19,17 @@ function Pesquisa() {
                 <img src={LogoGO} alt="LogoGotinha" className="logo" />
                 <nav className="nav">
                     <ul>
-                        <li><Link to="/2023.2_Gotinha" className="nav-button">Home</Link></li>
-                        <li><Link to="/2023.2_Gotinha/Pesquisa" className="nav-button">Pesquisa</Link></li>
-                        <li><Link to="/2023.2_Gotinha/Sobre" className="nav-button">Sobre</Link></li>
+                        <li><Link to="/pagina-mds" className="nav-button">Home</Link></li>
+                        <li><Link to="/pagina-mds/Pesquisa" className="nav-button">Pesquisa</Link></li>
+                        <li><Link to="/pagina-mds/Sobre" className="nav-button">Sobre</Link></li>
                     </ul>
                 </nav>
             </div>
             <div className="body">
                 <div className="texto-pesquisa">
                     <h2>Faça sua pesquisa!</h2>
-                    <p>Selecione uma cidade, um ano e um mês para gerar os gráficos!</p>
-                    <p>Caso julgue necessário, pode baixar os arquivos em formato pdf do mês selecionado</p>
+                    <p>Selecione uma cidade, um ano e confira quanto foi investido no setor da saúde!</p>
+                    <p>Caso julgue necessário, baixe o gráfico com os dados da cidade desejada.</p>
                 </div>
                 <div className="item-selection">
                     <select className="select-cidade">
@@ -38,22 +39,19 @@ function Pesquisa() {
                         ))}
                     </select>
                     <select className="select-ano">
-                        <option value="">Todos os anos</option>
+                        <option value="">Selecione um ano</option>
                         {ano.map((ano, index) => (
                             <option key={index} value={ano}>{ano}</option>
                         ))}
                     </select>
-                    <select className="select-mes">
-                        <option value="">Todos os meses</option>
-                        {mes.map((mes, index) => (
-                            <option key={index} value={mes}>{mes}</option>
-                        ))}
-                    </select>
                 </div>
                 <div className="graficos-pesquisa">
-                    <div className="grafico1-pesquisa">Gráfico 1!</div>
-                    <div className="grafico2-pesquisa">Gráfico 2!</div>
-                    <button className="btn-baixar-pdf">Baixar PDF's</button>
+                    <div className="grafico1-pesquisa">
+                        <GraficoBarra/>
+                    </div>
+                    <div className="grafico2-pesquisa">
+                        <GraficoRosquinha/>
+                    </div>
                 </div>
             </div>
             <div className="footer">

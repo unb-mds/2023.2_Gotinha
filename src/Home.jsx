@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import GraficoBarraRanking from './Graficos/GraficoBarraRanking';
 import { Link } from 'react-router-dom';
 import './Home.css';
 import LogoGO from './assets/goImg.png';
@@ -12,14 +13,14 @@ function Home() {
                 <img src={LogoGO} alt="LogoGotinha" className="logo" />
                 <nav className="nav">
                     <ul>
-                        <li><Link to="/2023.2_Gotinha" className="nav-button">Home</Link></li>
-                        <li><Link to="/2023.2_Gotinha/Pesquisa" className="nav-button">Pesquisa</Link></li>
-                        <li><Link to="/2023.2_Gotinha/Sobre" className="nav-button">Sobre</Link></li>
+                        <li><Link to="/pagina-mds" className="nav-button">Home</Link></li>
+                        <li><Link to="/pagina-mds/Pesquisa" className="nav-button">Pesquisa</Link></li>
+                        <li><Link to="/pagina-mds/Sobre" className="nav-button">Sobre</Link></li>
                     </ul>
                 </nav>
             </div>
             <div className="body">
-                <h1>Confira a relação de compra e distribuição de vacinas no estado do Goiás</h1>
+                <h1>Confira a relação de investimento na saúde do Goiás</h1>
                 <div className="itens-body">
                     <div className="conteudo1">
                         <div className="sobre-projeto">
@@ -33,8 +34,7 @@ function Home() {
                     </div>
                     <div className="conteudo2">
                         <div className="grafico">
-                            <h2>Cidades que mais investem na saúde do Goiás</h2>
-                            <p>Gráfico...</p>
+                            <GraficoBarraRanking />
                         </div>
                         <button className="btn-buscar-cidades">Buscar cidades</button>
                     </div>
