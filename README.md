@@ -41,3 +41,5 @@ npm run dev
 
 ### 🌟 Acesse o projeto
 Para acessar o projeto, no prompt de comando ou terminal, digite a letra O do seu teclado. Para finalizar a execução do projeto, digite a letra Q do seu teclado.
+
+.
