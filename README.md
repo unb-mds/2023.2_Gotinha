@@ -22,13 +22,13 @@ git clone https://github.com/unb-mds/2023.2_Gotinha.git
 ```
 
 ### 🚢 Navegue até a pasta raiz do projeto
-Feita a clonagem do repositório, navegue até a pasta raiz do projeto Gotinha:
+Feita a clonagem do repositório, navegue até sua pasta raiz:
 ```
 cd 2023.2_Gotinha
 ```
 
 ### ❗❗ Instale as dependências do projeto
-Como o projeto utiliza o Node.js, é necessário instalar as dependências do projeto:
+Como o projeto utiliza o Node.js, é necessário instalar suas dependências:
 ```
 npm install
 ```
@@ -40,4 +40,4 @@ npm run dev
 ```
 
 ### 🌟 Acesse o projeto
-Para acessar o projeto, no prompt de comando ou terminal, digite a letra O do seu teclado. Para finalizar a execução do projeto, digite a letra Q do seu teclado.
+Para acessar a página web, no prompt de comando ou terminal, digite a letra O do seu teclado. Para finalizar a execução do projeto, digite a letra Q do seu teclado.
