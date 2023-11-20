@@ -16,7 +16,7 @@ Este repositório é responsável por manter o front-end do projeto Gotinha. Vis
 - [Node.js](https://nodejs.org/en/download/)
 
 ### ⏬ Clonar o repositório
-Inicialmente, abra o terminal ou prompt de comando e clone o repositório do projeto Gotinha em sua máquina local. Para isso, execute o seguinte comando:
+Inicialmente, abra o terminal ou prompt de comando e clone o repositório do projeto Gotinha em sua máquina:
 ```
 git clone https://github.com/unb-mds/2023.2_Gotinha.git
 ```
