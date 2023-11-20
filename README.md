@@ -2,7 +2,7 @@ O projeto Gotinha faz parte da disciplina de Métodos de Desenvolvimento de Soft
 
 <p align="center">
 <img src="Imagens/Logo_Gotinha.png" alt="Gotinha" width="300" style="display: block; margin: 0 auto;">
-Logo gotinha
+<br>Logo gotinha</br>
 </p>
 
 ### 🔗 Link de acesso ao site: [Gotinha](https://unb-mds.github.io/2023.2_Gotinha/)
