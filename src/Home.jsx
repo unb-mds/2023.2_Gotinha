@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import GraficoBarraRanking from './Graficos/GraficoBarraRanking';
 import { Link } from 'react-router-dom';
 import './Home.css';
 import LogoGO from './assets/goImg.png';
@@ -19,7 +20,7 @@ function Home() {
                 </nav>
             </div>
             <div className="body">
-                <h1>Confira a relação de compra e distribuição de vacinas no estado do Goiás</h1>
+                <h1>Confira a relação de investimento na saúde do Goiás</h1>
                 <div className="itens-body">
                     <div className="conteudo1">
                         <div className="sobre-projeto">
@@ -33,8 +34,7 @@ function Home() {
                     </div>
                     <div className="conteudo2">
                         <div className="grafico">
-                            <h2>Cidades que mais investem na saúde do Goiás</h2>
-                            <p>Gráfico...</p>
+                            <GraficoBarraRanking />
                         </div>
                         <button className="btn-buscar-cidades">Buscar cidades</button>
                     </div>

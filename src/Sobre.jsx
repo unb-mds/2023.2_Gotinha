@@ -29,7 +29,6 @@ function Sobre() {
                             transmiti-los de maneira clara e objetiva</p>
                         <p>O objetivo principal do projeto é coletar diários oficiais municipais de diferentes
                             municípios do estado do Goiás e analisar suas informações.</p>
-                        <p>Essa aplicação é capaz de analisar os dados coletados dos diários oficiais e armazená-los para que seja possível analisar informações relevantes na área da saúde do Goiás.</p>
                         <p> Além destes, todo o código produzido é aberto e distribuído de forma
                             livre no repositório: (inserirlink)</p>
                         <div className="possivel-img">possivel imagem!</div>
