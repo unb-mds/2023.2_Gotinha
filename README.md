@@ -7,7 +7,7 @@ O projeto Gotinha faz parte da disciplina de Métodos de Desenvolvimento de Soft
 
 ### 🔗 Link de acesso ao site: [Gotinha](https://unb-mds.github.io/2023.2_Gotinha/)
 
-Este repositório é responsável por manter o front-end do projeto Gotinha. Visite o [repositório principal](https://github.com/unb-mds/2023-2-Squad09-Gotinha) para entender melhor o funcionamento do projeto.
+Este repositório é responsável por manter o front-end do projeto Gotinha. Visite o [repositório principal](https://github.com/unb-mds/2023-2-Squad09-Gotinha) para entender melhor seu funcionamento.
 
 ## Tutorial para executar o front-end do projeto Gotinha localmente
 
