@@ -1,7 +1,7 @@
 import React from 'react';
 import Chart from 'react-apexcharts';
 
-function GraficoRosquinha() {
+function GraficoRosquinha({ dados }) {
   const options = {
     chart: {
       toolbar: {
@@ -33,8 +33,7 @@ function GraficoRosquinha() {
     },
   };
 
-  const series = [330, 410, 445, 900, 324, 434, 792, 2222, 154, 2343, 1123, 4444]; // seus dados de série
-
+  const series = dados; // seus dados de série
   return <Chart options={options} series={series} type="donut" width={430} />;
 }
 

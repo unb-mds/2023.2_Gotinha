@@ -1,0 +1,44 @@
+{
+    "id": "goiania",
+    "nome": "Goiânia",
+    "detalhe": {
+        "2021": {
+            "1": {
+               "valor_investido": 3242.5
+            },
+            "2": {
+                "valor_investido": 123.5
+            },
+            "3": {
+                "valor_investido": 12324
+            },
+            "4": {
+                "valor_investido": 51
+            },
+            "5": {
+                "valor_investido": 10000
+            },
+            "6": {
+                "valor_investido": 245
+            },
+            "7": {
+                "valor_investido": 334
+            },
+            "8": {
+                "valor_investido": 11
+            },
+            "9": {
+                "valor_investido": 545
+            },
+            "10": {
+                "valor_investido": 66
+            },
+            "11": {
+                "valor_investido": 67
+            },
+            "12": {
+                "valor_investido": 0
+            }
+        }
+    }
+}
