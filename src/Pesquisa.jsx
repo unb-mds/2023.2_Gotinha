@@ -9,9 +9,67 @@ import LogoUNB from './assets/unbImg.png';
 
 
 function Pesquisa() {
+    const [cidades, setCidades] = useState([]); // Inicialize o estado com as cidades
+    const [ano, setAnos] = useState([]); // Inicialize o estado com o ano
+    const [cidadeSelecionada, setCidadeSelecionada] = useState("");
+    const [anoSelecionado, setAnoSelecionado] = useState("");
+    const [dadosGrafico, setDadosGrafico] = useState([]);
 
-    const [cidades, setCidades] = useState(["Cidade 1", "Cidade 2", "Cidade 3"]); // Inicialize o estado com as cidades
-    const [ano, setAno] = useState([2023, 2022, 2021]); // Inicialize o estado com o ano
+    useEffect(() => {
+        const urls = [
+            'https://raw.githubusercontent.com/paulomh/pagina-mds/main/src/arquivos/goiania.JSON',
+            'https://raw.githubusercontent.com/paulomh/pagina-mds/main/src/arquivos/luziania.JSON',
+            'https://raw.githubusercontent.com/paulomh/pagina-mds/main/src/arquivos/planaltina.JSON',
+            // adicione mais URLs conforme necessário
+        ];
+    
+
+        Promise.all(urls.map(url =>
+            fetch(url).then(resp => resp.json())
+        )).then(data => {
+            let cidades = [];
+            let anos = [];
+
+            data.forEach((dado) => {
+                if (!cidades.includes(dado.nome)) {
+                    cidades.push(dado.nome);
+                }
+
+                Object.keys(dado.detalhe).forEach(ano => {
+                    if (!anos.includes(ano)) {
+                        anos.push(ano);
+                    }
+                });
+            });
+
+            setCidades(cidades);
+            setAnos(anos);
+        });
+    }, []);
+
+    const cidadeUrlMap = {
+        'Luziânia': 'luziania',
+        'Goiânia': 'goiania',
+        'Planaltina': 'planaltina',
+        // adicione mais mapeamentos conforme necessário
+    };
+
+    useEffect(() => {
+        if (cidadeSelecionada && anoSelecionado) {
+            // Buscar dados do JSON correspondente
+            const cidadeUrl = cidadeUrlMap[cidadeSelecionada];
+            const url = `https://raw.githubusercontent.com/paulomh/pagina-mds/main/src/arquivos/${cidadeUrl}.JSON`;
+            console.log(url);
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    // Atualizar os dados do gráfico
+                    const dadosAno = data.detalhe[anoSelecionado];
+                    const dadosGrafico = Object.keys(dadosAno).map(mes => dadosAno[mes].valor_investido);
+                    setDadosGrafico(dadosGrafico);
+                });
+        }
+    }, [cidadeSelecionada, anoSelecionado]);
 
     return (
         <div className="pesquisa">
@@ -32,13 +90,13 @@ function Pesquisa() {
                     <p>Caso julgue necessário, baixe o gráfico com os dados da cidade desejada.</p>
                 </div>
                 <div className="item-selection">
-                    <select className="select-cidade">
+                    <select className="select-cidade" onChange={e => setCidadeSelecionada(e.target.value)}>
                         <option value="">Selecione uma cidade do Goiás</option>
                         {cidades.map((cidade, index) => (
                             <option key={index} value={cidade}>{cidade}</option>
                         ))}
                     </select>
-                    <select className="select-ano">
+                    <select className="select-ano" onChange={e => setAnoSelecionado(e.target.value)}>
                         <option value="">Selecione um ano</option>
                         {ano.map((ano, index) => (
                             <option key={index} value={ano}>{ano}</option>
@@ -47,10 +105,10 @@ function Pesquisa() {
                 </div>
                 <div className="graficos-pesquisa">
                     <div className="grafico1-pesquisa">
-                        <GraficoBarra />
+                        <GraficoBarra dados={dadosGrafico}/>
                     </div>
                     <div className="grafico2-pesquisa">
-                        <GraficoRosquinha />
+                        <GraficoRosquinha dados={dadosGrafico} />
                     </div>
                 </div>
             </div>

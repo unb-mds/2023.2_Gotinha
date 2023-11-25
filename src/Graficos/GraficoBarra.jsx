@@ -1,7 +1,10 @@
 import React from 'react';
 import Chart from 'react-apexcharts';
 
-function GraficoBarra() {
+function GraficoBarra( { dados } ) {
+
+    //console.log(dados);
+
     const options = {
         chart: {
             toolbar: {
@@ -40,7 +43,7 @@ function GraficoBarra() {
     const series = [
         {
             name: 'Valor investido (R$)',
-            data: [330, 410, 445, 900, 324, 434, 792, 2222, 154, 2343, 1123, 4444], // seus dados de série
+            data: dados, // seus dados de série
         },
     ];
 
