@@ -19,6 +19,7 @@ body {
 .logo {
     position: absolute;
     left: 1%;
+    top: 2px;
 }
 
 .nav {
@@ -75,6 +76,11 @@ body {
     text-align: center;
 }
 
+.conteudo1-sobre a {
+    font-style: italic;
+    color: #022B3A;
+}
+
 .conteudo1-sobre .possivel-img{
     display: flex;
     justify-content: center;
@@ -106,11 +112,14 @@ body {
     justify-content: center;
 }
 
+.conteudo2-sobre .integrantes1 {
+    margin: 4% 2% 0;
+}
+
 .conteudo2-sobre .integrantes{
     background: white;
     width: 55px;
     height: 55px;
-    margin: 35px;
     border-radius: 30px;
 }
 

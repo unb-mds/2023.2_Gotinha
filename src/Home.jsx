@@ -10,7 +10,9 @@ function Home() {
     return (
         <div className="home">
             <div className="header">
-                <img src={LogoGO} alt="LogoGotinha" className="logo" />
+                <Link to="/2023.2_Gotinha" className="logo">
+                    <img src={LogoGO} alt="LogoGotinha" />
+                </Link>
                 <nav className="nav">
                     <ul>
                         <li><Link to="/2023.2_Gotinha" className="nav-button">Home</Link></li>
@@ -30,21 +32,27 @@ function Home() {
                                 queremos monitorar se o governo do Goiás está tendo o compromisso adequado no que tange a
                                 área da saúde.</p>
                         </div>
-                        <button className="btn-sobre-projeto">Saiba Mais</button>
+                        <Link to="/2023.2_Gotinha/Sobre" className="btn-sobre-projeto">
+                            Saiba Mais
+                        </Link>
                     </div>
                     <div className="conteudo2">
                         <div className="grafico">
                             <GraficoBarraRanking />
                         </div>
-                        <button className="btn-buscar-cidades">Buscar cidades</button>
+                        <Link to="/2023.2_Gotinha/Pesquisa" className="btn-buscar-cidades">
+                            Buscar cidades
+                        </Link>
                     </div>
                 </div>
 
             </div>
             <div className="footer">
-                <div className="logo1">
-                    <img src={LogoGit} alt="LogoGitHub" className="logo-footer-git" />
-                </div>
+                <Link to="https://github.com/unb-mds/2023-2-Squad09-Gotinha" target="_blank">
+                    <div className="logo1">
+                        <img src={LogoGit} alt="LogoGitHub" className="logo-footer-git" />
+                    </div>
+                </Link>
                 <p>Todos os direitos reservados</p>
                 <div className="logo2">
                     <img src={LogoUNB} alt="LogoUNB" className="logo-footer-unb" />

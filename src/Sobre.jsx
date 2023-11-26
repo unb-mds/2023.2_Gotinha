@@ -10,7 +10,9 @@ function Sobre() {
     return (
         <div className="sobre">
             <div className="header">
-                <img src={LogoGO} alt="LogoGotinha" className="logo" />
+                <Link to="/2023.2_Gotinha" className="logo">
+                    <img src={LogoGO} alt="LogoGotinha" />
+                </Link>
                 <nav className="nav">
                     <ul>
                         <li><Link to="/2023.2_Gotinha" className="nav-button">Home</Link></li>
@@ -30,7 +32,7 @@ function Sobre() {
                         <p>O objetivo principal do projeto é coletar diários oficiais municipais de diferentes
                             municípios do estado do Goiás e analisar suas informações.</p>
                         <p> Além destes, todo o código produzido é aberto e distribuído de forma
-                            livre no repositório: (inserirlink)</p>
+                            livre no repositório <a href="https://github.com/unb-mds/2023-2-Squad09-Gotinha" target="_blank" rel="noopener noreferrer">gotinha/extrator</a></p>
                         <div className="possivel-img">possivel imagem!</div>
                     </div>
                     <div className="conteudo2-sobre">
@@ -39,21 +41,34 @@ function Sobre() {
                             pela Universidade de Brasília e ministrada pela professor Carla Rocha.</p>
                         <h2>Equipe de Denvolvimento</h2>
                         <div className="box">
-                            <div className="integrantes"></div>
-                            <div className="integrantes"></div>
-                            <div className="integrantes"></div>
-                            <div className="integrantes"></div>
-                            <div className="integrantes"></div>
-                            <div className="integrantes"></div>
-                            <div className="integrantes"></div>
+                            <Link to="https://github.com/joao-artl" target="_blank" className="integrantes1">
+                                <img src="https://avatars.githubusercontent.com/u/124414056?v=4" alt="dev" className="integrantes" />
+                            </Link>
+                            <Link to="https://github.com/LuizGust4vo" target="_blank" className="integrantes1">
+                                <img src="https://avatars.githubusercontent.com/u/62315709?v=4" alt="dev" className="integrantes" />
+                            </Link>
+                            <Link to="https://github.com/yanzin00" target="_blank" className="integrantes1">
+                                <img src="https://avatars.githubusercontent.com/u/118907920?v=4" alt="dev" className="integrantes" />
+                            </Link>
+                            <Link to="https://github.com/Mxrcio" target="_blank" className="integrantes1">
+                                <img src="https://avatars.githubusercontent.com/u/82161026?v=4" alt="dev" className="integrantes" />
+                            </Link>
+                            <Link to="https://github.com/paulomh" target="_blank" className="integrantes1">
+                                <img src="https://avatars.githubusercontent.com/u/129633592?v=4" alt="dev" className="integrantes" />
+                            </Link>
+                            <Link to="https://github.com/DudaV228" target="_blank" className="integrantes1">
+                                <img src="https://avatars.githubusercontent.com/u/110543736?v=4" alt="dev" className="integrantes" />
+                            </Link>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="footer">
-                <div className="logo1">
-                    <img src={LogoGit} alt="LogoGitHub" className="logo-footer-git" />
-                </div>
+                <Link to="https://github.com/unb-mds/2023-2-Squad09-Gotinha" target="_blank">
+                    <div className="logo1">
+                        <img src={LogoGit} alt="LogoGitHub" className="logo-footer-git" />
+                    </div>
+                </Link>
                 <p>Todos os direitos reservados</p>
                 <div className="logo2">
                     <img src={LogoUNB} alt="LogoUNB" className="logo-footer-unb" />

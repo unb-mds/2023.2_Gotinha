@@ -22,7 +22,7 @@ function Pesquisa() {
             'https://raw.githubusercontent.com/paulomh/pagina-mds/main/src/arquivos/planaltina.JSON',
             // adicione mais URLs conforme necessário
         ];
-    
+
 
         Promise.all(urls.map(url =>
             fetch(url).then(resp => resp.json())
@@ -74,7 +74,9 @@ function Pesquisa() {
     return (
         <div className="pesquisa">
             <div className="header">
-                <img src={LogoGO} alt="LogoGotinha" className="logo" />
+                <Link to="/2023.2_Gotinha" className="logo">
+                    <img src={LogoGO} alt="LogoGotinha" />
+                </Link>
                 <nav className="nav">
                     <ul>
                         <li><Link to="/2023.2_Gotinha" className="nav-button">Home</Link></li>
@@ -105,7 +107,7 @@ function Pesquisa() {
                 </div>
                 <div className="graficos-pesquisa">
                     <div className="grafico1-pesquisa">
-                        <GraficoBarra dados={dadosGrafico}/>
+                        <GraficoBarra dados={dadosGrafico} />
                     </div>
                     <div className="grafico2-pesquisa">
                         <GraficoRosquinha dados={dadosGrafico} />
@@ -113,9 +115,11 @@ function Pesquisa() {
                 </div>
             </div>
             <div className="footer">
-                <div className="logo1">
-                    <img src={LogoGit} alt="LogoGitHub" className="logo-footer-git" />
-                </div>
+                <Link to="https://github.com/unb-mds/2023-2-Squad09-Gotinha" target="_blank">
+                    <div className="logo1">
+                        <img src={LogoGit} alt="LogoGitHub" className="logo-footer-git" />
+                    </div>
+                </Link>
                 <p>Todos os direitos reservados</p>
                 <div className="logo2">
                     <img src={LogoUNB} alt="LogoUNB" className="logo-footer-unb" />
