@@ -1,16 +1,29 @@
-import React from 'react';
 import Chart from 'react-apexcharts';
 
 function GraficoBarraRanking() {
     const options = {
         chart: {
             type: 'bar',
+            toolbar: {
+                show: false,
+            }
         },
+        responsive: [
+            {
+                breakpoint: 730,
+                options: {
+                    chart: {
+                        width: 390,
+                        height: 390,
+                    },
+                },
+            },
+        ],
         title: {
             text: 'Ranking de cidades que mais investem', // define o título do gráfico
             align: 'center', // centraliza o título
             style: {
-                fontSize: '20px', // define o tamanho da fonte
+                fontSize: '18px', // define o tamanho da fonte
                 color: '#EEF0F2', // define a cor do título
                 fontWeight: 'bold',
               },
@@ -31,11 +44,9 @@ function GraficoBarraRanking() {
         xaxis: {
             categories: ['Cidade A', 'Cidade B', 'Cidade C', 'Cidade D', 'Cidade E'], // suas cidades
             labels: {
-                style: {
-                    colors: '#EEF0F2', // define a cor do texto do eixo X
-                    fontSize: '13px',
-                },
+                show: false,
             },
+            
         },
         yaxis: {
             labels: {
@@ -49,7 +60,7 @@ function GraficoBarraRanking() {
 
     const series = [
         {
-            data: [400, 430, 448, 470, 540], // seus dados de classificação
+            data: [100, 200, 300, 400, 500], // seus dados de classificação
         },
     ];
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import Chart from 'react-apexcharts';
 
 function GraficoBarra( { dados } ) {
@@ -46,6 +46,10 @@ function GraficoBarra( { dados } ) {
             data: dados, // seus dados de série
         },
     ];
+
+    GraficoBarra.propTypes = {
+        dados: PropTypes.array.isRequired, // ou o tipo de dados que você espera
+    };
 
     return <Chart options={options} series={series} type="bar" height={300} width={850} />;
 }

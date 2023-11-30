@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import GraficoBarra from './Graficos/GraficoBarra';
 import GraficoRosquinha from "./Graficos/GraficoRosquinha";
@@ -114,14 +114,14 @@ function Pesquisa() {
                     </div>
                 </div>
             </div>
-            <div className="footer">
+            <div className="footer-pesquisa">
                 <Link to="https://github.com/unb-mds/2023-2-Squad09-Gotinha" target="_blank">
-                    <div className="logo1">
+                    <div className="logo1-pesquisa">
                         <img src={LogoGit} alt="LogoGitHub" className="logo-footer-git" />
                     </div>
                 </Link>
                 <p>Todos os direitos reservados</p>
-                <div className="logo2">
+                <div className="logo2-pesquisa">
                     <img src={LogoUNB} alt="LogoUNB" className="logo-footer-unb" />
                 </div>
             </div>

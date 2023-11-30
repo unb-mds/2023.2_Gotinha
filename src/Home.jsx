@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import GraficoBarraRanking from './Graficos/GraficoBarraRanking';
 import { Link } from 'react-router-dom';
 import './Home.css';
@@ -9,7 +8,7 @@ import LogoUNB from './assets/unbImg.png';
 function Home() {
     return (
         <div className="home">
-            <div className="header">
+            <div className="header-home">
                 <Link to="/2023.2_Gotinha" className="logo">
                     <img src={LogoGO} alt="LogoGotinha" />
                 </Link>
@@ -21,7 +20,7 @@ function Home() {
                     </ul>
                 </nav>
             </div>
-            <div className="body">
+            <div className="body-home">
                 <h1>Confira a relação de investimento na saúde do Goiás</h1>
                 <div className="itens-body">
                     <div className="conteudo1">
@@ -47,14 +46,14 @@ function Home() {
                 </div>
 
             </div>
-            <div className="footer">
+            <div className="footer-home">
                 <Link to="https://github.com/unb-mds/2023-2-Squad09-Gotinha" target="_blank">
-                    <div className="logo1">
-                        <img src={LogoGit} alt="LogoGitHub" className="logo-footer-git" />
+                    <div className="logo1-home">
+                        <img src={LogoGit} alt="LogoGithub" className="logo-footer-git" />
                     </div>
                 </Link>
                 <p>Todos os direitos reservados</p>
-                <div className="logo2">
+                <div className="logo2-home">
                     <img src={LogoUNB} alt="LogoUNB" className="logo-footer-unb" />
                 </div>
             </div>

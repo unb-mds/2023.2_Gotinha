@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import Chart from 'react-apexcharts';
 
 function GraficoRosquinha({ dados }) {
@@ -36,5 +36,9 @@ function GraficoRosquinha({ dados }) {
   const series = dados; // seus dados de série
   return <Chart options={options} series={series} type="donut" width={430} />;
 }
+
+GraficoRosquinha.propTypes = {
+  dados: PropTypes.array.isRequired, // ou o tipo de dados que você espera
+};
 
 export default GraficoRosquinha;

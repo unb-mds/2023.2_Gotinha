@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import React from 'react'
 import Home from './Home'
 import Sobre from './Sobre'
 import Pesquisa from './Pesquisa'

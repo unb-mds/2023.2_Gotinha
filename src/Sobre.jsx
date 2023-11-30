@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import './Sobre.css';
 import LogoGO from './assets/goImg.png';
@@ -63,14 +62,14 @@ function Sobre() {
                     </div>
                 </div>
             </div>
-            <div className="footer">
+            <div className="footer-sobre">
                 <Link to="https://github.com/unb-mds/2023-2-Squad09-Gotinha" target="_blank">
-                    <div className="logo1">
+                    <div className="logo1-sobre">
                         <img src={LogoGit} alt="LogoGitHub" className="logo-footer-git" />
                     </div>
                 </Link>
                 <p>Todos os direitos reservados</p>
-                <div className="logo2">
+                <div className="logo2-sobre">
                     <img src={LogoUNB} alt="LogoUNB" className="logo-footer-unb" />
                 </div>
             </div>
