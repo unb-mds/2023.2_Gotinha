@@ -13,8 +13,13 @@ function GraficoBarraRanking() {
                 breakpoint: 730,
                 options: {
                     chart: {
-                        width: 390,
+                        width: 340,
                         height: 390,
+                    },
+                    title: {
+                        style: {
+                            fontSize: '15px',
+                        },
                     },
                 },
             },

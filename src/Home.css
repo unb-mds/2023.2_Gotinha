@@ -13,7 +13,7 @@
     justify-content: space-between;
     align-items: center;
     background: #1F7A8C;
-    height: 10vh;
+    height: 80px;
 }
 
 .logo {
@@ -134,7 +134,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #1F7A8C;
-    height: 10vh;
+    height: 80px;
 }
 
 .footer-home p {
@@ -205,18 +205,22 @@
 }
 
 @media (max-width: 730px){
-    .body-home h1 {
-        font-size: 26px;
-        margin-top: 30px;
-    }
-
     .sobre-projeto, .grafico {
-        width: 400px;
+        width: 350px;
         height: 400px;
     }
 
+    .body-home h1 {
+        padding: 0 4%;
+        margin-bottom: 50px;
+    }
+
     .sobre-projeto p {
-        font-size: 23px;
+        font-size: 20px;
+    }
+
+    .sobre-projeto h2 {
+        font-size: 24px;
     }
 
     .logo {
@@ -228,16 +232,21 @@
     .body-home h1 {
         font-size: 23px;
     }
+
+    .footer-home p {
+        display: none;
+    }
+
+    .footer-home .logo-footer-unb{
+        width: 70%;
+        height: 80%;
+        margin-left: 20%;
+    }
 }
 
 @media (max-width: 625px){
     .footer-home p {
         font-size: 17px;
-    }
-
-    .footer-home .logo-footer-unb{
-        width: 80%;
-        margin-right: 15px;
     }
 }
 
