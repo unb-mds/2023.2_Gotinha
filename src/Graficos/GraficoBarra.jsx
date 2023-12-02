@@ -11,6 +11,35 @@ function GraficoBarra( { dados } ) {
                 show: true, // esconde a barra de ferramentas
             },
         },
+        responsive: [
+            {
+                breakpoint: 1366,
+                options: {
+                    chart: {
+                        width: 650,
+                        height: 340,
+                    },
+                },
+            },
+            {
+                breakpoint: 1140,
+                options: {
+                    chart: {
+                        width: 500,
+                        height: 340,
+                    },
+                },
+            },
+            {
+                breakpoint: 860,
+                options: {
+                    chart: {
+                        width: 400,
+                        height: 340,
+                    },
+                },
+            },
+        ],
         plotOptions: {
             bar: {
                 horizontal: false, // faz o gráfico de barras ser vertical
@@ -51,7 +80,7 @@ function GraficoBarra( { dados } ) {
         dados: PropTypes.array.isRequired, // ou o tipo de dados que você espera
     };
 
-    return <Chart options={options} series={series} type="bar" height={300} width={850} />;
+    return <Chart options={options} series={series} type="bar" height={340} width={750} />;
 }
 
 export default GraficoBarra;

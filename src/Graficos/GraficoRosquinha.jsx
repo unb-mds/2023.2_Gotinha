@@ -20,7 +20,7 @@ function GraficoRosquinha({ dados }) {
     plotOptions: {
       pie: {
         donut: {
-          size: '60%', // define o tamanho do buraco no meio do gráfico
+          size: '40%', // define o tamanho do buraco no meio do gráfico
         },
       },
     },
@@ -31,6 +31,34 @@ function GraficoRosquinha({ dados }) {
     legend: {
       position: 'bottom', // define a posição da legenda
     },
+    responsive: [
+      {
+        breakpoint: 700,
+        options: {
+          chart: {
+            width: 380,
+            toolbar: {
+              show: false,
+            },
+          },
+          title: {
+            style: {
+              fontSize: '13px', // define o tamanho da fonte
+            },
+          },
+          legend: {
+            markers: {
+              width: 10,
+              height: 10,
+            },
+            itemMargin: {
+              horizontal: 10,
+              vertical: 3,
+            },
+          }
+        },
+      },
+    ],
   };
 
   const series = dados; // seus dados de série

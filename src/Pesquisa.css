@@ -8,7 +8,7 @@ body {
     background: #BFDBF7;
 }
 
-.header {
+.header-pesquisa {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -126,7 +126,7 @@ select:focus {
     height: 350px;
     margin-top: 40px;
     background: #5BA7C8;
-    border-radius: 50px;
+    border-radius: 30px;
 }
 
 .footer-pesquisa {
@@ -134,7 +134,7 @@ select:focus {
     justify-content: space-between;
     align-items: center;
     background: #1F7A8C;
-    height: 81px;
+    height: 80px;
     margin-top: 5%;
 }
 
@@ -161,4 +161,17 @@ select:focus {
 .footer-pesquisa .logo-footer-unb {
     height: 60px;
     margin-right: 15px;
+}
+
+@media (max-width: 700px){
+    .graficos-pesquisa .grafico1-pesquisa{
+        display: none;
+    }
+}
+
+@media (max-width: 589px){
+    .graficos-pesquisa .grafico2-pesquisa{
+        width: 85%;
+        margin: 5%;
+    }
 }

@@ -73,7 +73,7 @@ function Pesquisa() {
 
     return (
         <div className="pesquisa">
-            <div className="header">
+            <div className="header-pesquisa">
                 <Link to="/2023.2_Gotinha" className="logo">
                     <img src={LogoGO} alt="LogoGotinha" />
                 </Link>
