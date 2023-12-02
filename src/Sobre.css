@@ -8,7 +8,7 @@ body {
     background: #BFDBF7;
 }
 
-.header {
+.header-sobre {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,7 +52,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .conteudo1-sobre {
@@ -63,7 +63,7 @@ body {
 }
 
 .conteudo1-sobre h2 {
-    margin-bottom: 45px;
+    margin-bottom: 30px;
     color: #022B3A;
     font-size: 35px;
     text-align: center;
@@ -123,19 +123,6 @@ body {
     border-radius: 30px;
 }
 
-/*
-.conteudo1-sobre, .conteudo2-sobre {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 500px;
-    height: 500px;
-    background: #2E7D9A;
-    border-radius: 50px;
-    margin-bottom: 43px;
-}
-*/
-
 .footer-sobre {
     display: flex;
     justify-content: space-between;
@@ -167,6 +154,90 @@ body {
 .footer-sobre .logo-footer-unb {
     height: 60px;
     margin-right: 15px;
+}
+
+@media (max-width: 1180px){
+    .nav ul {
+        gap: 60px;
+    }
+
+    .conteudo1-sobre {
+        width: 85%;
+    }
+
+    .conteudo1-sobre h2 {
+        font-size: 33px;
+    }
+
+    .conteudo1-sobre p {
+        font-size: 22px;
+    }
+
+    .conteudo2-sobre {
+        width: 80%;
+    }
+
+    .conteudo2-sobre h2 {
+        font-size: 33px;
+    }
+
+    .conteudo2-sobre p {
+        font-size: 22px;
+    }
+
+    .footer-sobre p{
+        margin-top: 5px;
+    }
+
+    .conteudo2-sobre .integrantes{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px){
+    .conteudo1-sobre .possivel-img{
+        width: 500px;
+        height: 400px;
+    }
+
+    .conteudo1-sobre h2 {
+        margin: 10px;
+    }
+
+    .conteudo1-sobre h2, .conteudo2-sobre h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 730px){
+    .logo {
+        display: none;
+    }
+}
+
+@media (max-width: 640px){
+    .footer-sobre p {
+        display: none;
+    }
+
+    .footer-sobre .logo-footer-unb{
+        width: 70%;
+        height: 80%;
+        margin-left: 20%;
+    }
+
+    .conteudo2-sobre .integrantes{
+        width: 44px;
+        height: 44px;
+    }
+}
+
+@media (max-width: 540px) {
+    .conteudo1-sobre .possivel-img {
+        width: 340px;
+        height: 300px;
+    }
 }
 
 

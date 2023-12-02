@@ -8,7 +8,7 @@ import LogoUNB from './assets/unbImg.png';
 function Sobre() {
     return (
         <div className="sobre">
-            <div className="header">
+            <div className="header-sobre">
                 <Link to="/2023.2_Gotinha" className="logo">
                     <img src={LogoGO} alt="LogoGotinha" />
                 </Link>
@@ -20,7 +20,7 @@ function Sobre() {
                     </ul>
                 </nav>
             </div>
-            <div className="body">
+            <div className="body-sobre">
                 <div className="itens-body-sobre">
                     <div className="conteudo1-sobre">
                         <h2>O que faz o projeto?</h2>
