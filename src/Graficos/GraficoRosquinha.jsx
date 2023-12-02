@@ -53,7 +53,7 @@ function GraficoRosquinha({ dados }) {
             },
             itemMargin: {
               horizontal: 10,
-              vertical: 3,
+              vertical: 2,
             },
           }
         },

@@ -85,7 +85,7 @@ function Pesquisa() {
                     </ul>
                 </nav>
             </div>
-            <div className="body">
+            <div className="body-pesquisa">
                 <div className="texto-pesquisa">
                     <h2>Faça sua pesquisa!</h2>
                     <p>Selecione uma cidade, um ano e confira quanto foi investido no setor da saúde!</p>
