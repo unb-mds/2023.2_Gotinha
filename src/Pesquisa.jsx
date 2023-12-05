@@ -63,7 +63,7 @@ function Pesquisa() {
                 .then(data => {
                     // Atualizar os dados do gráfico
                     const dadosAno = data.detalhe[anoSelecionado];
-                    const dadosGrafico = Object.keys(dadosAno).map(mes => dadosAno[mes].valor_investido);
+                    const dadosGrafico = Object.keys(dadosAno).map(mes => dadosAno[mes].valores_gastos);
                     setDadosGrafico(dadosGrafico);
                 });
         }
