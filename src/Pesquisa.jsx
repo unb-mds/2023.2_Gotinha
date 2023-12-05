@@ -62,8 +62,9 @@ function Pesquisa() {
                 .then(response => response.json())
                 .then(data => {
                     // Atualizar os dados do gráfico
-                    const dadosAno = data.detalhe[anoSelecionado];
+                    const dadosAno = data.detalhe[anoSelecionado][anoSelecionado];
                     const dadosGrafico = Object.keys(dadosAno).map(mes => dadosAno[mes].valores_gastos);
+                    console.log(dadosGrafico);
                     setDadosGrafico(dadosGrafico);
                 });
         }
