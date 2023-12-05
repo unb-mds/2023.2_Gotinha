@@ -48,9 +48,7 @@ function Pesquisa() {
     }, []);
 
     const cidadeUrlMap = {
-        'Luziânia': 'luziania',
         'Goiânia': 'goiania',
-        'Planaltina': 'planaltina',
         // adicione mais mapeamentos conforme necessário
     };
 
@@ -58,7 +56,7 @@ function Pesquisa() {
         if (cidadeSelecionada && anoSelecionado) {
             // Buscar dados do JSON correspondente
             const cidadeUrl = cidadeUrlMap[cidadeSelecionada];
-            const url = `https://raw.githubusercontent.com/paulomh/pagina-mds/main/src/arquivos/${cidadeUrl}.JSON`;
+            const url = `https://raw.githubusercontent.com/unb-mds/2023-2-Squad09-Gotinha/main/JSON/${cidadeUrl}.json`;
             console.log(url);
             fetch(url)
                 .then(response => response.json())
