@@ -46,7 +46,7 @@ function Pesquisa() {
     }, []);
 
     const cidadeUrlMap = {
-        'Goiânia': 'goiania',
+        'GOIANIA': 'goiania',
         // adicione mais mapeamentos conforme necessário
     };
 
