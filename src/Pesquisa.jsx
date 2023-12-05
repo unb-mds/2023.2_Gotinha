@@ -17,9 +17,7 @@ function Pesquisa() {
 
     useEffect(() => {
         const urls = [
-            'https://raw.githubusercontent.com/paulomh/pagina-mds/main/src/arquivos/goiania.JSON',
-            'https://raw.githubusercontent.com/paulomh/pagina-mds/main/src/arquivos/luziania.JSON',
-            'https://raw.githubusercontent.com/paulomh/pagina-mds/main/src/arquivos/planaltina.JSON',
+            'https://raw.githubusercontent.com/unb-mds/2023-2-Squad09-Gotinha/main/JSON/goiania.json',
             // adicione mais URLs conforme necessário
         ];
 
