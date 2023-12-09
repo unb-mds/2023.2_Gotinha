@@ -45,9 +45,9 @@ function GraficoBarraRanking() {
         grid: {
             show: false,
         },
-        colors: ['#0B475E'], // define as cores das barras
+        colors: ['#005B6E'], // define as cores das barras
         xaxis: {
-            categories: ['Cidade A', 'Cidade B', 'Cidade C', 'Cidade D', 'Cidade E'], // suas cidades
+            categories: ['Goiânia', 'Aparecida de Goiânia', 'Cidade Ocidental', 'Goianésia', 'Trindade'], // suas cidades
             labels: {
                 show: false,
             },
@@ -55,6 +55,7 @@ function GraficoBarraRanking() {
         },
         yaxis: {
             labels: {
+                formatter: (value) => { return value.toLocaleString('pt-BR'); },
                 style: {
                     colors: '#EEF0F2', // define a cor do texto do eixo X
                     fontSize: '13px',
@@ -65,7 +66,8 @@ function GraficoBarraRanking() {
 
     const series = [
         {
-            data: [100, 200, 300, 400, 500], // seus dados de classificação
+            name: 'Valor investido(R$)',
+            data: [	1100000000, 536000000, 282000000, 273000000, 269000000], // seus dados de classificação
         },
     ];
 

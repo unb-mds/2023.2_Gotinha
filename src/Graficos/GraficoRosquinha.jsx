@@ -27,7 +27,7 @@ function GraficoRosquinha({ dados }) {
     stroke: {
       show: false, // remove a borda do gráfico
     },
-    colors: ['#0B475E', '#156D8A'], // define as cores das fatias
+    colors: ['#003F52', '#007099', '#005B6E'], // define as cores das fatias
     legend: {
       position: 'bottom', // define a posição da legenda
     },

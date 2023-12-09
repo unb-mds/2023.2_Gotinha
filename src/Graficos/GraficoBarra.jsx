@@ -6,6 +6,9 @@ function GraficoBarra( { dados } ) {
     //console.log(dados);
 
     const options = {
+        dataLabels: {
+            enabled: false,
+        },
         chart: {
             toolbar: {
                 show: true, // esconde a barra de ferramentas
@@ -49,7 +52,7 @@ function GraficoBarra( { dados } ) {
         grid: {
             show: false,
         },
-        colors: ['#0B475E'], // define as cores das barras
+        colors: ['#005B6E'], // define as cores das barras
         xaxis: {
             categories: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'], // define as categorias do eixo X
             labels: {
@@ -61,6 +64,7 @@ function GraficoBarra( { dados } ) {
         },
         yaxis: {
             labels: {
+                formatter: (value) => { return value.toLocaleString('pt-BR'); },
                 style: {
                     colors: '#EEF0F2', // define a cor do texto do eixo X
                     fontSize: '13px',

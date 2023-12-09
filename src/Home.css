@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 .home {
@@ -66,14 +69,16 @@
     margin: 40px 0;
 }
 
+.sobre-projeto, .grafico {
+    background: #4e90ac;
+}
+
 .sobre-projeto {
-    background: #2E7D9A;
     width: 490px;
     height: 400px;
 }
 
 .grafico {
-    background: #2E7D9A;
     width: 650px;
     height: 400px;
 }
@@ -105,7 +110,7 @@
 .sobre-projeto p, .grafico p {
     margin: auto 50px;
     color: #EEF0F2;
-    font-size: 26px;
+    font-size: 24px;
     text-align: center;
 }
 
@@ -117,7 +122,8 @@
     width: 150px;
     height: 50px;
     margin-top: 30px;
-    background: #022B3A;
+    background: #025673;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     border-radius: 30px;
     color: #EEF0F2;
     font-size: 17px;

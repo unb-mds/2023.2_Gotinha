@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
-
 body {
     background: #BFDBF7;
 }
@@ -65,14 +67,14 @@ body {
 .conteudo1-sobre h2 {
     margin-bottom: 30px;
     color: #022B3A;
-    font-size: 35px;
+    font-size: 33px;
     text-align: center;
 }
 
 .conteudo1-sobre p {
     margin-top: 15px;
     color: #022B3A;
-    font-size: 26px;
+    font-size: 24px;
     text-align: center;
 }
 
@@ -94,14 +96,15 @@ body {
 .conteudo2-sobre h2 {
     margin-top: 45px;
     color: #022B3A;
-    font-size: 35px;
+    font-size: 33px;
     text-align: center;
 }
 
 .conteudo2-sobre p {
     margin-top: 35px;
+    padding: 10px;
     color: #022B3A;
-    font-size: 26px;
+    font-size: 24px;
     text-align: center;
 }
 
