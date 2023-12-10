@@ -3,7 +3,7 @@ import './Sobre.css';
 import LogoGO from './assets/goImg.png';
 import LogoGit from './assets/gitImg.png';
 import LogoUNB from './assets/unbImg.png';
-
+import Fluxo from './assets/fluxo.png';
 
 function Sobre() {
     return (
@@ -32,7 +32,9 @@ function Sobre() {
                             municípios do estado do Goiás e analisar suas informações.</p>
                         <p> Além destes, todo o código produzido é aberto e distribuído de forma
                             livre no repositório <a href="https://github.com/unb-mds/2023-2-Squad09-Gotinha" target="_blank" rel="noopener noreferrer">gotinha/extrator</a></p>
-                        <div className="possivel-img">possivel imagem!</div>
+                        <div className="possivel-img">
+                            <img src={Fluxo} alt="Fluxo de dados do projeto" className="img"/>
+                        </div>
                     </div>
                     <div className="conteudo2-sobre">
                         <h2>Sobre nós</h2>
