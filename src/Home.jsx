@@ -27,7 +27,7 @@ function Home() {
                         <div className="sobre-projeto">
                             <h2>Confira o projeto</h2>
                             <p>Coletamos os diários oficiais municipais, separamos por municípios e analisamos a
-                                relação de compra e distribuição de vacinas no estado do Goiás. Com foco em simplicidade e transparência,
+                                relação de investimento na saúde no estado do Goiás. Com foco em simplicidade e transparência,
                                 queremos monitorar se o governo do Goiás está tendo o compromisso adequado no que tange a
                                 área da saúde.</p>
                         </div>
