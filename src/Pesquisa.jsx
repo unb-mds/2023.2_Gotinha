@@ -18,8 +18,9 @@ function Pesquisa() {
     useEffect(() => {
         const urls = [
             'https://raw.githubusercontent.com/unb-mds/2023-2-Squad09-Gotinha/main/JSON/goiania.json',
-            //'https://raw.githubusercontent.com/unb-mds/2023-2-Squad09-Gotinha/main/JSON/luziania.json',
-            'https://raw.githubusercontent.com/unb-mds/2023-2-Squad09-Gotinha/main/JSON/aparecidadegoiania.json',
+            'https://raw.githubusercontent.com/unb-mds/2023-2-Squad09-Gotinha/main/JSON/luziania.json',
+            'https://raw.githubusercontent.com/unb-mds/2023-2-Squad09-Gotinha/main/JSON/aparecidagoiania.json',
+            'https://raw.githubusercontent.com/unb-mds/2023-2-Squad09-Gotinha/main/JSON/anapolis.json',
             // adicione mais URLs conforme necessário
         ];
 
@@ -49,8 +50,9 @@ function Pesquisa() {
 
     const cidadeUrlMap = {
         'Goiânia': 'goiania',
-        //'Luziânia': 'luziania',
-        'Aparecida de Goiânia': 'aparecidadegoiania',
+        'Luziânia': 'luziania',
+        'Aparecida de Goiânia': 'aparecidagoiania',
+        'Anápolis': 'anapolis',
         // adicione mais mapeamentos conforme necessário
     };
 
