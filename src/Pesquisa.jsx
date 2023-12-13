@@ -11,16 +11,32 @@ import LogoUNB from './assets/unbImg.png';
 function Pesquisa() {
     const [cidades, setCidades] = useState([]); // Inicialize o estado com as cidades
     const [ano, setAnos] = useState([]); // Inicialize o estado com o ano
-    const [cidadeSelecionada, setCidadeSelecionada] = useState("");
-    const [anoSelecionado, setAnoSelecionado] = useState("");
+    const [cidadeSelecionada, setCidadeSelecionada] = useState("Goiânia");
+    const [anoSelecionado, setAnoSelecionado] = useState("2023");
     const [dadosGrafico, setDadosGrafico] = useState([]);
 
     useEffect(() => {
         const urls = [
-            'https://raw.githubusercontent.com/unb-mds/2023-2-Squad09-Gotinha/main/JSON/goiania.json',
-            'https://raw.githubusercontent.com/unb-mds/2023-2-Squad09-Gotinha/main/JSON/luziania.json',
-            'https://raw.githubusercontent.com/unb-mds/2023-2-Squad09-Gotinha/main/JSON/aparecidagoiania.json',
+            'https://raw.githubusercontent.com/unb-mds/2023-2-Squad09-Gotinha/main/JSON/alexania.json',
             'https://raw.githubusercontent.com/unb-mds/2023-2-Squad09-Gotinha/main/JSON/anapolis.json',
+            'https://raw.githubusercontent.com/unb-mds/2023-2-Squad09-Gotinha/main/JSON/aparecidagoiania.json',
+            'https://raw.githubusercontent.com/unb-mds/2023-2-Squad09-Gotinha/main/JSON/arenopolis.json',
+            'https://raw.githubusercontent.com/unb-mds/2023-2-Squad09-Gotinha/main/JSON/cidadeocidental.json',
+            'https://raw.githubusercontent.com/unb-mds/2023-2-Squad09-Gotinha/main/JSON/cocalzinhodegoias.json',
+            'https://raw.githubusercontent.com/unb-mds/2023-2-Squad09-Gotinha/main/JSON/goianesia.json',
+            'https://raw.githubusercontent.com/unb-mds/2023-2-Squad09-Gotinha/main/JSON/goiania.json',
+            'https://raw.githubusercontent.com/unb-mds/2023-2-Squad09-Gotinha/main/JSON/inhumas.json',
+            'https://raw.githubusercontent.com/unb-mds/2023-2-Squad09-Gotinha/main/JSON/ipora.json',
+            'https://raw.githubusercontent.com/unb-mds/2023-2-Squad09-Gotinha/main/JSON/itaberai.json',
+            'https://raw.githubusercontent.com/unb-mds/2023-2-Squad09-Gotinha/main/JSON/jaragua.json',
+            'https://raw.githubusercontent.com/unb-mds/2023-2-Squad09-Gotinha/main/JSON/luziania.json',
+            'https://raw.githubusercontent.com/unb-mds/2023-2-Squad09-Gotinha/main/JSON/montesclarosdegoias.json',
+            'https://raw.githubusercontent.com/unb-mds/2023-2-Squad09-Gotinha/main/JSON/palestinadegoias.json',
+            'https://raw.githubusercontent.com/unb-mds/2023-2-Squad09-Gotinha/main/JSON/planaltina.json',
+            'https://raw.githubusercontent.com/unb-mds/2023-2-Squad09-Gotinha/main/JSON/rioverde.json',
+            'https://raw.githubusercontent.com/unb-mds/2023-2-Squad09-Gotinha/main/JSON/trindade.json',
+            'https://raw.githubusercontent.com/unb-mds/2023-2-Squad09-Gotinha/main/JSON/uruacu.json',
+            'https://raw.githubusercontent.com/unb-mds/2023-2-Squad09-Gotinha/main/JSON/valparaisodegoias.json',
             // adicione mais URLs conforme necessário
         ];
 
@@ -49,10 +65,26 @@ function Pesquisa() {
     }, []);
 
     const cidadeUrlMap = {
-        'Goiânia': 'goiania',
-        'Luziânia': 'luziania',
-        'Aparecida de Goiânia': 'aparecidagoiania',
+        'Alexânia': 'alexania',
         'Anápolis': 'anapolis',
+        'Aparecida de Goiânia': 'aparecidagoiania',
+        'Arenópolis': 'arenopolis',
+        'Cidade Ocidental': 'cidadeocidental',
+        'Cocalzinho de Goiás': 'cocalzinhodegoias',
+        'Goiânia': 'goiania',
+        'Goianésia': 'goianesia',
+        'Inhumas': 'inhumas',
+        'Iporá': 'ipora',
+        'Itaberaí': 'itaberai',
+        'Jaraguá': 'jaragua',
+        'Luziânia': 'luziania',
+        'Montes Claros de Goiás': 'montesclarosdegoias',
+        'Palestina de Goiás': 'palestinadegoias',
+        'Planaltina': 'planaltina',
+        'Rio Verde': 'rioverde',
+        'Trindade': 'trindade',
+        'Uruaçu': 'uruacu',
+        'Valparaíso de Goiás': 'valparaisodegoias',
         // adicione mais mapeamentos conforme necessário
     };
 
@@ -95,13 +127,13 @@ function Pesquisa() {
                     <p>Caso julgue necessário, baixe o gráfico com os dados da cidade desejada.</p>
                 </div>
                 <div className="item-selection">
-                    <select className="select-cidade" onChange={e => setCidadeSelecionada(e.target.value)}>
+                    <select className="select-cidade" value={cidadeSelecionada} onChange={e => setCidadeSelecionada(e.target.value)}>
                         <option value="">Selecione uma cidade do Goiás</option>
                         {cidades.map((cidade, index) => (
                             <option key={index} value={cidade}>{cidade}</option>
                         ))}
                     </select>
-                    <select className="select-ano" onChange={e => setAnoSelecionado(e.target.value)}>
+                    <select className="select-ano" value={anoSelecionado} onChange={e => setAnoSelecionado(e.target.value)}>
                         <option value="">Selecione um ano</option>
                         {ano.map((ano, index) => (
                             <option key={index} value={ano}>{ano}</option>
