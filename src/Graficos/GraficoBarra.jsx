@@ -57,7 +57,7 @@ function GraficoBarra( { dados } ) {
             categories: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'], // define as categorias do eixo X
             labels: {
                 style: {
-                    colors: '#EEF0F2', // define a cor do texto do eixo X
+                    colors: 'black', // define a cor do texto do eixo X
                     fontSize: '13px',
                 },
             },
@@ -66,7 +66,7 @@ function GraficoBarra( { dados } ) {
             labels: {
                 formatter: (value) => { return value.toLocaleString('pt-BR'); },
                 style: {
-                    colors: '#EEF0F2', // define a cor do texto do eixo X
+                    colors: 'black', // define a cor do texto do eixo X
                     fontSize: '13px',
                 },
             },

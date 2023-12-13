@@ -225,10 +225,6 @@ body {
 }
 
 @media (max-width: 640px){
-    .footer-sobre p {
-        display: none;
-    }
-
     .footer-sobre .logo-footer-unb{
         width: 70%;
         height: 80%;

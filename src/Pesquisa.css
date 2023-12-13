@@ -232,11 +232,7 @@ select:focus {
         text-align: center;
         margin: 2% 10%;
     }
-
-    .footer-pesquisa p {
-        display: none;
-    }
-
+    
     .footer-pesquisa .logo-footer-unb{
         width: 70%;
         height: 80%;

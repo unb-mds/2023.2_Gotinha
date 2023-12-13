@@ -52,7 +52,6 @@ function Home() {
                         <img src={LogoGit} alt="LogoGithub" className="logo-footer-git" />
                     </div>
                 </Link>
-                <p>Todos os direitos reservados</p>
                 <div className="logo2-home">
                     <img src={LogoUNB} alt="LogoUNB" className="logo-footer-unb" />
                 </div>

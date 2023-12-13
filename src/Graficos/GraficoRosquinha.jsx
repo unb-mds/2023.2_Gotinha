@@ -13,7 +13,7 @@ function GraficoRosquinha({ dados }) {
       align: 'center', // centraliza o título
       style: {
         fontSize: '20px', // define o tamanho da fonte
-        color: '#EEF0F2', // define a cor do título
+        color: 'black', // define a cor do título
       },
     },
     labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
@@ -28,6 +28,13 @@ function GraficoRosquinha({ dados }) {
       show: false, // remove a borda do gráfico
     },
     colors: ['#003F52', '#007099', '#005B6E'], // define as cores das fatias
+    tooltip: {
+      y: {
+        formatter: function(value) {
+          return value.toLocaleString('pt-BR');
+        }
+      }
+    },
     legend: {
       position: 'bottom', // define a posição da legenda
     },

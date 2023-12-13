@@ -70,7 +70,6 @@ function Sobre() {
                         <img src={LogoGit} alt="LogoGitHub" className="logo-footer-git" />
                     </div>
                 </Link>
-                <p>Todos os direitos reservados</p>
                 <div className="logo2-sobre">
                     <img src={LogoUNB} alt="LogoUNB" className="logo-footer-unb" />
                 </div>
